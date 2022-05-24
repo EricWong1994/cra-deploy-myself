@@ -6,9 +6,22 @@ services:
       dockerfile: Dockerfile
     ports:
       - 3000:3000
+  route:
+    build:
+      context: .
+      dockerfile: router.Dockerfile
+    ports:
+      - 3000:80
   simple:
     build:
       context: ''
       dockerfile: simple.Dockerfile
     ports:
       - 4000:80
+  nginx-app:
+    build:
+      context: .
+      dockerfile: nginx.Dockerfile
+    ports:
+      - 4000:80
+      
