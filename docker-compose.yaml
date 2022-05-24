@@ -1,7 +1,7 @@
 services:
-  cramyself:
+  default:
     build:
       context: .
-      dockerfile: cramyself.Dockerfile
+      dockerfile: Dockerfile
     ports:
-      - 4000:3000
+      - 3000:3000
