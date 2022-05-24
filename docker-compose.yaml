@@ -1,3 +1,4 @@
+version: '3'
 services:
   default:
     build:
@@ -5,3 +6,9 @@ services:
       dockerfile: Dockerfile
     ports:
       - 3000:3000
+  simple:
+    build:
+      context: ''
+      dockerfile: simple.Dockerfile
+    ports:
+      - 4000:80
