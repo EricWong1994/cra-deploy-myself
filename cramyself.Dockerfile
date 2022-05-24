@@ -9,6 +9,8 @@ RUN yarn
 
 ADD . /code
 RUN npm run build
+# /code
+# RUN pwd
 
 CMD npx serve -s build
 EXPOSE 3000

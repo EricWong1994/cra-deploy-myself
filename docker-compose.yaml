@@ -1,0 +1,7 @@
+services:
+  cramyself:
+    build:
+      context: .
+      dockerfile: cramyself.Dockerfile
+    ports:
+      - 4000:3000
