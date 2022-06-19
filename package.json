@@ -21,7 +21,8 @@
     "test": "react-scripts test",
     "oss:script": "node scripts/uploadOSS.mjs",
     "oss:prune": "node scripts/deleteOSS.mjs",
-    "oss:cli": "ossutilmac64 cp -rf --meta Cache-Control:no-cache build oss://ericwong-cra/ && ossutilmac64 cp -rf --meta Cache-Control:max-age=31536000 build/static oss://ericwong-cra/static"
+    "oss:climac64": "ossutilmac64 cp -rf --meta Cache-Control:no-cache build oss://ericwong-cra/ && ossutilmac64 cp -rf --meta Cache-Control:max-age=31536000 build/static oss://ericwong-cra/static",
+    "oss:cli": "ossutil cp -rf --meta Cache-Control:no-cache build oss://ericwong-cra/ && ossutil cp -rf --meta Cache-Control:max-age=31536000 build/static oss://ericwong-cra/static"
   },
   "eslintConfig": {
     "extends": [

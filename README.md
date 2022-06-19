@@ -11,4 +11,6 @@ ports:
 
 `npm run oss:script`: 采用阿里云脚本上传build目录文件到阿里云OSS
 `npm run oss:prune`: 删除上面的这些文件
-`npm run oss:cli`: 采用ossutil上传build目录文件到阿里云OSS
+`npm run oss:climac64`: 采用ossutil上传build目录文件到阿里云OSS
+
+`docker-compose up --build oss`: 打包并上传oss
