@@ -20,6 +20,7 @@ function Home() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1>当前在 Home 页面</h1>
+        <div>TEST CICD</div>
         <Link to="/about" className="App-link">About</Link>
       </header>
     </div>
